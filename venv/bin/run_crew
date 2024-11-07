@@ -1,0 +1,6 @@
+#!/Users/dorothyaisquare/code/transcription_test/venv/bin/python
+import sys
+from transcription_test.main import run
+
+if __name__ == '__main__':
+    sys.exit(run())

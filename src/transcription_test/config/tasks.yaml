@@ -1,0 +1,16 @@
+transcription_task:
+  description: >
+    Transcribe the video at the provided URL {URL}.
+  expected_output: >
+    Text corresponding to the audio output from the provided video.
+  agent: transcriber
+
+quiz_generation_task:
+  description: >
+    Review the text you received, identify the topic and generate questions on that topic about the information included in the text.
+    Consult any internet resources necessary to thoroughly test the user's knowedge of the concepts mentioned in the text.
+    Make sure the questions are well-explained, concise, contains any and all relevant information and that the answers provided are correct.
+  expected_output: >
+    Generate 1-3 questions from the text along with the correct answer to each question.
+    Formatted as markdown without '```'
+  agent: quiz_generator
