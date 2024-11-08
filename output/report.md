@@ -1,6 +1,13 @@
 ```json
 {
-    "question": "What is the purpose of type annotations in Python?",
-    "explanation": "Type annotations provide a way for developers to indicate the expected data types of variables and function return types. They serve as an optional tool for documentation and error checking within a code editor, allowing the developer to catch potential type-related mistakes before runtime. Although type annotations do not affect the execution of the code itself, they improve code readability and maintainability. For instance, specifying that a variable 'age' has an integer type helps clarify the programmer's intent and serves as a guideline for others reading the code, although the program will run without enforcing these types."
+    "question": "What is the purpose of type annotations in Python, as mentioned in the context?",
+    "options": [
+        "A) They automatically enforce variable types at runtime.",
+        "B) They provide a way to document the expected data types of variables and functions.",
+        "C) They define constants in Python that cannot be changed.",
+        "D) They increase the execution speed of the program."
+    ],
+    "correct_answer": "B",
+    "explanation": "Type annotations in Python are used to document the expected data types of variables and functions. They serve as a helpful guide for developers, allowing code editors to generate warnings if the provided types do not match expected types, thus helping prevent errors. However, type annotations do not enforce type checking at runtime; the program will still run regardless of whether the annotations are adhered to. They are essentially a developer tool and not a security feature, much like a traffic light that serves a guiding function but does not physically stop a car from going through a red light."
 }
 ```

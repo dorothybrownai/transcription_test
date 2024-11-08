@@ -13,5 +13,5 @@ quiz_generation_task:
   expected_output: >
     Multiple Choice Question (MCQ) Format: The question should have one correct answer and three incorrect but plausible
     distractors.
-    JSON Output: The output should be in the following JSON structure: 'question': '...', 'explanation': '...'
+    JSON Output: The output should be in the following JSON structure: 'question': '...', 'options': '...', 'correct_answer': '...', 'explanation': '...'
   agent: quiz_generator
