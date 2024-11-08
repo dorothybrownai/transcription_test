@@ -27,7 +27,7 @@ class TranscriptionTestCrew():
     def quiz_generator(self) -> Agent:
         return Agent(
             config=self.agents_config['quiz_generator'],
-            tools=[SerperDevTool(), WebsiteSearchTool()],
+            # tools=[SerperDevTool(), WebsiteSearchTool()],
             verbose=True
         )
 

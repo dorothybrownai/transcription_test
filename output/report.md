@@ -1,8 +1,6 @@
-1. **Question:** What are the basic data types available in Python, and how do they differ from each other?
-   **Answer:** The basic data types in Python include integers, floats, strings, and Booleans. Integers are whole numbers, while floats are decimal numbers. Strings are sequences of characters enclosed in quotes, and Booleans represent two states: True or False.
-
-2. **Question:** Explain the purpose of type annotations in Python and their importance in code development.
-   **Answer:** Type annotations in Python serve as a way to explicitly declare the data type of a variable, which helps in identifying potential errors during code development. Although they do not affect how the program executes, they provide warnings in code editors when incorrect types are assigned, acting as a safeguard against logical errors in coding. 
-
-3. **Question:** What are Dunder methods in Python, and how do they enhance the functionality of classes?
-   **Answer:** Dunder methods, or double underscore methods, are special methods in Python that allow developers to define how objects of a class interact with certain operations, such as addition or string representation. For example, the `__add__` method can be defined to customize what happens when two objects of a class are added together. This enhances the functionality and usability of classes by allowing them to behave like built-in types in Python.
+```json
+{
+    "question": "What is the purpose of type annotations in Python?",
+    "explanation": "Type annotations provide a way for developers to indicate the expected data types of variables and function return types. They serve as an optional tool for documentation and error checking within a code editor, allowing the developer to catch potential type-related mistakes before runtime. Although type annotations do not affect the execution of the code itself, they improve code readability and maintainability. For instance, specifying that a variable 'age' has an integer type helps clarify the programmer's intent and serves as a guideline for others reading the code, although the program will run without enforcing these types."
+}
+```
