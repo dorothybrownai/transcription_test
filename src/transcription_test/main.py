@@ -13,7 +13,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'URL': 'https://www.youtube.com/watch?v=Gx5qb1uHss4'
+        'URL': 'https://www.youtube.com/watch?v=7PlA7Seax78'
     }
     TranscriptionTestCrew().crew().kickoff(inputs=inputs)
 

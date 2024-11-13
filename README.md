@@ -2,18 +2,21 @@
 
 Welcome to the TranscriptionTest Crew project, powered by [crewAI](https://crewai.com).
 
-This project takes a URL for a YouTube video, fetches the video transcript and generates a quiz question from the video content.
+This project takes a URL for a YouTube video, fetches the video transcript and generates a quiz question from the video content using the QLLM API.
 Currently the youtube_transcript_api is used to get the video transcript, which gets the transcripts/subtitles for a given YouTube video.
 
 Possible next steps:
 
-- Find a tool that actually generates the transcripts from video
-- Make calls to the QLLM API to update the domain context with the video transcript and call the QLLM API to generate questions
-  with the updated context.
+- Find a tool that actually generates the transcripts from video that can be used in enterprise applications.
+- Make calls to the QLLM API to update the domain context with the video transcript and call the QLLM API to generate questions with the updated context.
 - Create a condensed version of the transcript before adding it to the QLLM domain context (to reduce the amount of data we need to store)
 - Scrape YouTube for each existing domain (or even new domains), then have an agent make calls to the QLLM API to update the domain context.
 - Use videos from a reputable source like Coursera, EdX, Udemy, KhanAcademy, etc. so that we can ensure data quality, otherwise have some way of validating the information before updating the QLLM domain.
 - Have a way to make sure that we aren't duplicating data we are already storing in the QLLM domain context.
+- Return multiple questions on the given input instead of a single question.
+- Allow for audio file input (Generate quiz questions from audio files that would be transcribed)
+- Allow for upload of pdf or hand-written notes.
+- Allow for mulitple inputs (Multiple YouTube or other videos)
 
 This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
@@ -31,6 +34,9 @@ Example Videos:
 - Top 6 Coding Interview Concepts (Data Structures & Algorithms): https://www.youtube.com/watch?v=ft0owvS5tQA
 - Lambda Functions/ Anonymous Functions In Python | Python Interview Question #1: https://www.youtube.com/watch?v=7PlA7Seax78
 - 10 Important Python Concepts In 20 Minutes: https://www.youtube.com/watch?v=Gx5qb1uHss4
+- Python in 100 Seconds: https://www.youtube.com/watch?v=x7X9w_GIm1s
+- Python Tutorial: https://www.youtube.com/watch?v=Sg4GMVMdOPo
+- Differential Equation Introduction: https://www.youtube.com/watch?v=6o7b9yyhH7k
 
 ## Installation
 

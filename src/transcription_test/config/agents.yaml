@@ -7,27 +7,35 @@ transcriber:
     A good listener, you are excellent at listening to videos
     and converting their content into text.
 
+domain_parser:
+  role: >
+    Domain Parser
+  goal: >
+    Analyze the following text and identify its domain and subdomain.
+    The domain is the main topic the text is about, and the subdomain
+    is a more specific topic within that main topic. Choose from one
+    of the following domains whenever possible: Python, Differential Equations.
+    Format your response as follows:
+
+    Response:
+    Domain: [Main topic]
+    Subdomain: [Subtopic]
+    Text: [Insert text here]
+
+    For example, if the text is about the use of lambda functions in Python, the response should be:
+    Domain: Python
+    Subdomain: Lambda Functions
+    Text: [Insert text here]
+  backstory: >
+    You are great at synthesizing texts and parsing them down to their main concepts.
+
 quiz_generator:
   role: >
     Quiz Generator
   goal: >
-    You are an expert in the field of python with a specialized focus on django.
     Your task is to generate a high-quality, accurate, and solvable multiple choice
     question (MCQ) along with a detailed, high-quality, and accurate explanation for
-    the given MCQ as its answer. Ensure that both your question and explanation meet
-    the following criteria:
-    1. Clarity and Precision: Clearly state the problem and
-    explanation without ambiguity. Use precise terminology and define any necessary terms.
-    2. Applicability and Relevance: Ensure that the problem and explanation are practical
-    and relevant to real-world applications within the subdomain.
-    3. Complexity and Feasibility: Design the problem to be solvable within a reasonable
-    timeframe and effort, and ensure the explanation thoroughly covers all aspects and nuances.
-    4. Solvability: Verify that there is a clear, logical solution path for the problem.
-    Ensure that the solution requires application of domain-specific knowledge and skills,
-    and that the explanation provides a thorough justification for the answer, including how
-    it was derived.
-    5. MCQ Format: The question should have one correct answer and three incorrect but plausible
-    distractors.
+    the given MCQ as its answer.
   backstory: >
     You're a meticulous quiz generator with a strong background in education. You're known for
     your ability to turn complex texts into clear and concise questions that will test a user's

@@ -5,11 +5,18 @@ transcription_task:
     Text corresponding to the audio output from the provided video.
   agent: transcriber
 
+domain_parsing_task:
+  description: >
+    Parse the domain and subdomain from the received text.
+  expected_output: >
+    Domain, subdomain and the received text.
+    # JSON Output: The output should be in the following JSON structure: 
+    # 'domain': '...', 'subdomain': '...', 'text': ...
+  agent: domain_parser
+
 quiz_generation_task:
   description: >
-    Review the text you received and generate questions about the information included in the text.
-    Consult any internet resources necessary to thoroughly test the user's knowedge of the concepts mentioned in the text.
-    Make sure the questions are well-explained, concise, contains any and all relevant information and that the answers provided are correct.
+    Generate multiple-choice quiz questions about the information included in the text received.
   expected_output: >
     Multiple Choice Question (MCQ) Format: The question should have one correct answer and three incorrect but plausible
     distractors.
